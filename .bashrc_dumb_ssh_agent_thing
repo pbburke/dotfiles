@@ -1,0 +1,10 @@
+#dumb ssh-agent stuff
+#https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+SSHAGENT=/usr/bin/ssh-agent
+SSHAGENTARGS="-s"
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+    eval `$SSHAGENT $SSHAGENTARGS`
+    ssh-add ~/.ssh/ansible_github
+    trap "kill $SSH_AGENT_PID" 0
+fi
+
