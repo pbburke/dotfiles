@@ -1,4 +1,5 @@
-#dumb ssh-agent stuff
+#dumb ssh-agent stuff for using ssh-agent over ssh
+#mostly for using my headless ansible thing for ex294 and then backing up the work to github
 #https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
 SSHAGENT=/usr/bin/ssh-agent
 SSHAGENTARGS="-s"
