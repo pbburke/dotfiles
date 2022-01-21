@@ -69,3 +69,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/campus21/pbburke/perl5"; export PERL_MM_OPT;
 
 alias sshnokey="ssh -o PasswordAuthentication=yes -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no"
 alias prettymount="mount | awk '{ printf  \"%-40s %s %-40s %s %-15s %s\\n\", \$1, \$2, \$3, \$4, \$5, \$6 }'"
+alias prettygitlog="git log --all --decorate --oneline --graph"
