@@ -1,6 +1,7 @@
 set number
 syntax on
 set expandtab
+set autoindent
 set tabstop=4
 set shiftwidth=4
 
